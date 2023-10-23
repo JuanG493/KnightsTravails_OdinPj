@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+input:invalid:required {
+    border: 1px solid red;
+}
+
+input:valid {
+    border: 1px solid green;
+}
+
+.board {
+    width: 500px;
+    height: 500px;
+}

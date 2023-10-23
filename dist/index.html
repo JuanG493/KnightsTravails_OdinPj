@@ -9,7 +9,35 @@
 </head>
 
 <body>
-    <h1>Hello</h1>
+    <div class="header">
+        <h1 class="headed">Knights Travails Odin Project</h1>
+    </div>
+    <div class="mainBtns">
+        <fieldset>
+            <legend>moves</legend>
+            <div class="head">
+                <span>set the position</span>
+                <span>X</span>
+                <span>Y</span>
+            </div>
+            <div class="starPoints">
+                <span>initial position</span>
+                <input type="number" id="iX" min="0" max="7" value="3" required>
+                <input type="number" id="iY" min="0" max="7" value="3" required>
+            </div>
+            <div class="starPoints">
+                <span>Target position</span>
+                <input type="number" id="iX" min="0" max="7" value="1" required>
+                <input type="number" id="iY" min="0" max="7" value="1" required>
+            </div>
+            <button type="submit">send</button>
+        </fieldset>
+
+    </div>
+    <div class="board"></div>
+    <div class="frame"></div>
+    <div class="footer"></div>
+
 
 </body>
 
