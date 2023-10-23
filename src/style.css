@@ -12,6 +12,21 @@ input:valid {
 }
 
 .board {
-    width: 500px;
-    height: 500px;
+    display: flex;
+    /* flex-flow: column wrap; */
+    flex-wrap: wrap;
+    width: 400px;
+    height: 400px;
+}
+
+.square {
+    /* background-color: red; */
+    border: 1px solid red;
+    /* border-collapse: separate; */
+    width: 50px;
+    height: 50px;
+}
+
+.square:hover {
+    /* background-color: rebeccapurple; */
 }

@@ -1,11 +1,16 @@
-let initialMove = [7, 7];
-let targetMove = [0, 0];
-let pathResult;
-
-class Noddinson {
-  constructor(value = null, parent = [null]) {
-    this.parent = parent;
-    this.value = value;
+export function resolver(initialMove, targetMove){
+  // console.log("initial move:", initialMove);
+  // console.log("target: ", targetMove);
+  let pathResult;
+  
+  
+  // let initialMove = [7, 7];
+  // let targetMove = [0, 0];
+  
+  class Noddinson {
+    constructor(value = null, parent = [null]) {
+      this.parent = parent;
+      this.value = value;
   }
 }
 
@@ -23,7 +28,7 @@ function generatingMoves(initialMove, father = null) {
     [initialMove[0] - 2, initialMove[1] + 1],
     [initialMove[0] + 2, initialMove[1] - 1],
   ];
-
+  
   //  check it is a valid move insde of the frame
   //  make a node if the move it´s valid (L)
   one.forEach((elm) => {
@@ -40,7 +45,7 @@ function checkwinner(nodes) {
     if (noDo.value[0] == targetMove[0] && noDo.value[1] == targetMove[1]) {
       pathResult = [...noDo.parent];
       pathResult.push(noDo.value);
-
+      
       return true;
     }
   }
@@ -69,9 +74,11 @@ function findPath(movi) {
     findPath(newMoves);
   }
 }
-let startM = new Noddinson(initialMove);
-
-export {pathResult};
 // console.log(pathResult);
 
-//  pathResult;
+let startM = new Noddinson(initialMove);
+findPath([startM]);
+return pathResult;
+
+
+}

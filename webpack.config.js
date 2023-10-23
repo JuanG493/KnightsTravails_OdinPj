@@ -3,7 +3,11 @@ const path = require("path");
 module.exports = {
   mode: "development",
   devtool: "inline-source-map",
-  entry: "./src/index.js",
+  entry: {
+    index : "./src/index.js",
+    manipulation : "./src/manipulation.js",
+    moves : "./src/moves.js"
+  },
 
   output: {
     filename: "main.js",
