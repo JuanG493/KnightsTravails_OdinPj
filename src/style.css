@@ -1,14 +1,46 @@
 * {
     box-sizing: border-box;
     padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: black;
+    color: #57D982;
+
+}
+.mainBtns{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5%;
+    align-items: center;
+    /* text-align: right; */
+    /* gap: 2%; */
+
+    /* flex-direction: column; */
+    /* column-gap: 100px; */
+    /* align-items: space-around; */
+}
+fieldset{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    
+    
+}
+
+.header{
+    text-align: center;
+}
+button{
+    background-color: rebeccapurple;
+    border: 1px solid #7DD957;
+    border-radius: 10%;
+    padding: 1%;
 }
 
 input:invalid:required {
-    border: 1px solid red;
+    border: 1px solid #D957CE;
 }
 
 input:valid {
-    border: 1px solid green;
+    border: 1px solid #7DD957;
 }
 
 .board {
@@ -21,12 +53,61 @@ input:valid {
 
 .square {
     /* background-color: red; */
-    border: 1px solid red;
+    border: 1px solid rebeccapurple;
     /* border-collapse: separate; */
     width: 50px;
     height: 50px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 2s;
+    /* transition: ; */
 }
 
 .square:hover {
-    /* background-color: rebeccapurple; */
+  /* width: 300px;
+  height: 300px; */
+  transform: rotate(180deg);
+}
+
+.travel{
+
+    background-color: rebeccapurple;
+}
+.frame{
+    display: grid;
+    grid-template-columns: 50px 6fr;
+    
+    
+}
+.leftNums{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+    align-items: center;
+    padding-right: 2rem;
+    /* align-content: center; */
+    
+    
+    
+}
+.buttonNums{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    padding-top: 1rem;
+}
+.ind,
+.bott{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: larger;
+    /* border: 1px solid blue; */
+    /* text-align: center; */
+    width: 50px;
+    height: 50px;
 }

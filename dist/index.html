@@ -15,7 +15,7 @@
     <div class="mainBtns">
         <!-- <form id="form"> -->
         <fieldset>
-            <legend>moves</legend>
+            <legend>MOVES</legend>
             <div class="head">
                 <span>set the position</span>
                 <span>X</span>
@@ -31,13 +31,22 @@
                 <input type="number" id="tX" min="0" max="7" value="1" required>
                 <input type="number" id="tY" min="0" max="7" value="1" required>
             </div>
-            <button class="subBtn" type="submit">send</button>
+            <div>
+                <button class="subBtn" type="submit">send</button>
+                <button class="resetBtn">reset</button>
+            </div>
         </fieldset>
         <!-- </form> -->
 
     </div>
-    <div class="board"></div>
-    <div class="frame"></div>
+    <div class="frame">
+        <div class="leftNums"></div>
+        <div>
+            <div class="board"></div>
+            <div class="buttonNums"></div>
+        </div>
+    </div>
+    <!-- <div class="frame"></div> -->
     <div class="footer"></div>
 
 
