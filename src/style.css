@@ -6,33 +6,47 @@
     color: #57D982;
 
 }
-.mainBtns{
-    display: flex;
-    justify-content: center;
-    padding-bottom: 5%;
-    align-items: center;
-    /* text-align: right; */
-    /* gap: 2%; */
 
-    /* flex-direction: column; */
-    /* column-gap: 100px; */
-    /* align-items: space-around; */
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
 }
-fieldset{
+.mainBtns{
+    font-weight: bold;
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
-    
-    
+    grid-auto-flow: row;
+    justify-items: center;
+    gap: 5px;
+    padding: 1%;
 }
+
+.sendReset{
+    display: flex;
+    column-gap: 5px;
+}
+
 
 .header{
     text-align: center;
 }
+
 button{
-    background-color: rebeccapurple;
-    border: 1px solid #7DD957;
+    background-color:#7ed9573f;
+    border: 1px solid rebeccapurple;
+    color: aliceblue;
     border-radius: 10%;
-    padding: 1%;
+    padding: 4%;
+    text-transform: uppercase;
+}
+button:hover{
+    background-color:rgba(240, 248, 255, 0.765);
+    color:rebeccapurple;
+}
+button:disabled{
+    background-color: gray;
 }
 
 input:invalid:required {
@@ -45,29 +59,23 @@ input:valid {
 
 .board {
     display: flex;
-    /* flex-flow: column wrap; */
     flex-wrap: wrap;
-    width: 400px;
-    height: 400px;
+    width: 100%;
+    height: 100%;
 }
 
 .square {
-    /* background-color: red; */
     border: 1px solid rebeccapurple;
-    /* border-collapse: separate; */
-    width: 50px;
-    height: 50px;
+    width: 12.5%;
+    height: 12.5%;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: transform 2s;
-    /* transition: ; */
 }
 
 .square:hover {
-  /* width: 300px;
-  height: 300px; */
   transform: rotate(180deg);
 }
 
@@ -78,8 +86,6 @@ input:valid {
 .frame{
     display: grid;
     grid-template-columns: 50px 6fr;
-    
-    
 }
 .leftNums{
     display: flex;
@@ -88,10 +94,6 @@ input:valid {
     text-align: center;
     align-items: center;
     padding-right: 2rem;
-    /* align-content: center; */
-    
-    
-    
 }
 .buttonNums{
     display: flex;
@@ -106,8 +108,6 @@ input:valid {
     align-items: center;
     font-weight: bold;
     font-size: larger;
-    /* border: 1px solid blue; */
-    /* text-align: center; */
     width: 50px;
     height: 50px;
 }

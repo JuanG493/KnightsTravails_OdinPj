@@ -1,11 +1,10 @@
-import { resolver } from "./moves";
+import { resolver } from "./index.js";
 
 let board = document.querySelector(".board");
 let sendBtn = document.querySelector(".subBtn");
 let resetBtn = document.querySelector(".resetBtn");
 let leftNums = document.querySelector(".leftNums");
 let buttonNums = document.querySelector(".buttonNums");
-let frame = document.querySelector(".frame");
 let startPoint = [];
 let targetPoint = [];
 let pointResult;
@@ -91,5 +90,6 @@ resetBtn.addEventListener("click", () => {
   leftNums.innerHTML = "";
   buttonNums.innerHTML = "";
   drawBoard();
-  //   console.log(startPoint);
 });
+
+export { drawBoard };
